@@ -1,0 +1,76 @@
+VITE JS
+Por defecto vienen muchos archivos, entre ellos estilos, podemos quitarlos para empezar todo desde cerp.
+
+assets > en esta carpeta podemos colocar imagenes o svg
+
+Y tenemos un archivo main.jsx que seria el equivalente al archivo index.js de create react app
+La diferencia es que en este exige mas la etiqueta
+<React.StrictMode> </React.StrictMode>
+
+EXTENSIONES UTILES:
+
+ES7+React/Redux/Node S...
+
+rfce > y me auto completa la estructura inicial de mi componente
+
+
+MOSTRAR LISTA DE TAREAS.
+clg: te autocompleta console.log()
+useState > opcion useStateSnippet: te autocompleta el useState
+
+Cuando se importa un archivo en un programa, si el nombre del archivo que se está importando coincide con el
+nombre de otra variable, función o clase ya definida en el programa, puede haber un conflicto. Para evitar 
+este conflicto, se puede usar la palabra clave "as" en la declaración de importación para darle un alias al 
+archivo importado.
+
+por ejemplo:
+
+import { tasks as data } from "./Tasks";  👈
+
+let tasks = [];
+
+AÑADIR TAREA DESDE FORMULARIO.
+
+
+UI COMPONENTS TREE
+ARBOL DE COMPONENTES!
+
+
+SEPARAR COMPONENTES.
+
+
+ELIMINAR TAREA.
+
+
+CONTEXTO!!!
+Una nueva forma que nos da REACT de traer datos.
+En el caso de esta APP se creara un contexto que contenga a todos los componentes incluyendo al APP
+y sera este quien ahora contendra el estado, y al abarcar este a los demas componentes, los 
+demas componentes podran acceder a los datos. Esta es una mejor forma de compartir el estado con los demas componentes!
+
+al contexto react le llame empy and context
+
+
+Recordemos que en react existe la palabra children, haciendo referencia a hijos.
+
+USECONTEXT.
+
+
+
+TailwindsCSS.
+
+
+
+DEPLOY EN GITHUB PAGES
+
+
+Desplegamos nuestro Proyecto
+haciendo npm run build
+
+Iniciamos repo en GITHUB
+y  consultamos una pagina llamada gh-pages npm
+> npm install gh-pages --save-dev
+Y se añade a nuestro package.json
+
+Creamos un comando nuevo: deploy en el scripts de nuestro package para hacer uso del modulo nuevo
+    "deploy": "gh-pages -d dist"
